@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+            android:id="@+id/ll_voice"
+            android:background="#f0eff5"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_voice_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:text="按住录音" />
+
+            <RelativeLayout
+                android:id="@+id/rl_voice"
+                android:layout_width="100dip"
+                android:layout_height="100dip"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/play_voice_normal" >
+
+                <com.pb.record.VoiceProgressView
+                    android:id="@+id/roundProgressBar1"
+                    android:layout_width="100dip"
+                    android:layout_height="100dip" />
+
+                <ImageView
+                    android:id="@+id/iv_play"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/pay_voice" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_del_voice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:background="@drawable/bg_shape_del"
+                android:layout_marginTop="10dp"
+                android:text="删除" />
+        </LinearLayout>
+</RelativeLayout>
